@@ -1,0 +1,10 @@
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\Microsoft.Web.Services3.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\SelcommWSsvc.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\SingtelSockets.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\obj\Debug\SelcommOSSSingtel.csprojResolveAssemblyReference.cache
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\obj\Debug\SelcommOSSSingtel.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\obj\Debug\SelcommOSSSingtel.pdb
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\SelcommOSSSingtel.dll.config
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\SelcommOSSSingtel.dll
+F:\Projects\Projects\MNPBSS\Code\7june18\selcomm-oss-singtel\SelcommOSSSingtel\bin\SelcommOSSSingtel.pdb

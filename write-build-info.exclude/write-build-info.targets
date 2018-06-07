@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Target Name="WriteBuildInfo" AfterTargets="BeforeBuild">
+    <Exec Command="powershell.exe -executionpolicy bypass -nologo -File $(MSBuildThisFileDirectory)\write-build-info.ps1 $(ProjectDir) $(OutDir)build-info" />
+  </Target>
+  <Target Name="BuildInfo_CopyWebApplicationLegacy" AfterTargets="_CopyWebApplicationLegacy" DependsOnTargets="_CopyWebApplicationLegacy">
+    <ItemGroup>
+      <_CopyItems Include="$(OutDir)\build-info\**" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(WebProjectOutputDir)\bin\build-info\%(RecursiveDir)" />
+  </Target>
+  <Target Name="BuildInfo_WPPCopyWebApplication" AfterTargets="_WPPCopyWebApplication" DependsOnTargets="_WPPCopyWebApplication">
+    <ItemGroup>
+      <_CopyItems Include="$(OutDir)\build-info\**" />
+    </ItemGroup>
+    <Copy SourceFiles="@(_CopyItems)" DestinationFolder="$(WebProjectOutputDir)\bin\build-info\%(RecursiveDir)" />
+  </Target>
+</Project>

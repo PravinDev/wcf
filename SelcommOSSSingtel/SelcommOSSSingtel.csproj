@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C1B49623-2934-448D-9627-95DD185CDDAC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SelcommWebServices.SelcommOSS.Singtel</RootNamespace>
+    <AssemblyName>SelcommOSSSingtel</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Reference\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="SelcommWSsvc, Version=51.1.999.11, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Reference\SelcommWSsvc.dll</HintPath>
+    </Reference>
+    <Reference Include="SingtelSockets, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Reference\SingtelSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Helpers\ReadMe.txt" />
+    <Content Include="MNPBSS\MNPBSS.svc" />
+    <Content Include="Reference\Microsoft.Web.Services3.dll" />
+    <Content Include="Reference\SingtelSockets.dll" />
+    <Content Include="SelcommWSsvc.dll.config" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Address.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressDisplayList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressSimpleList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressTypeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AddressUsageList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Attribute.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AttributeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.AttributeTemplateList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.BillFile.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.BusinessUnitList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ClientServiceUsageGraphDisplayList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ClientSession.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Contact.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactPhone.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactPhoneType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactRelationshipList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactRelationshipType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ContactRelationshipTypeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Country.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.CountryList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Document.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Event.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.EventAttachment.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.EventData.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.EventDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.EventSchedule.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.EventType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ExtendedAddress.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ExtendedAddressList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ExtendedDataListOfSearchResultOfContactDisplayjqGDtiULirYmXdb9.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.FinancialTransactionList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.IdentificationType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Locality.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.LocalityList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.NetworkNotification.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Package.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageDiscount.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageGroup.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageGroupDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageOption.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PackageType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PaymentRequestResponseDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.PostCode.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Recharge.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeAutomaticPurchase.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeAutomaticPurchaseList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeAutomaticPurchaseStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeAutomaticPurchaseStatusList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBalance.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatch.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchFile.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchStatusList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchStatusReason.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeBatchStatusReasonList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeCategory.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeCategoryList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeConsumeTransaction.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeConsumeTransactionList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeElement.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeElementEvent.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeElementList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeIncludedElementBundle.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeNewRechargeActions.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargePreAuthorisation.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargePreAuthorisationList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargePricingRequest.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargePricingRequestList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeServiceAssignmentHistoryList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeStatusList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeStatusReason.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeStatusReasonList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeSuggestionSingletonResponse.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeTypeElement.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeTypeElementList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeTypeElementRulesMatrix.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeTypeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.RechargeTypeRulesMatrix.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.SecretQuestionAndAnswersList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.Service.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceActionDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceAttribute.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceBarResponse.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceDisplayList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceNetworkBalance.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceNetworkPortStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceNetworkStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServicePackage.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceStatus.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceSubscriber.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.ServiceTypeDisplay.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.State.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.StateList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.StreetType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.StreetTypeList.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.TupleOfbooleanbooleanbooleanboolean.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.TupleOfbooleanstring.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.TupleOfstringstring.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.UnitType.datasource" />
+    <Content Include="Properties\DataSources\SelcommWSsvc.SelcommWSAll.UnitTypeList.datasource" />
+    <Content Include="Reference\SelcommWSsvc.dll" />
+    <Content Include="SMSC\ntwkSMSC.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Helpers\EmailHelper.cs" />
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\Helpers.cs" />
+    <Compile Include="Helpers\Log.cs" />
+    <Compile Include="Helpers\Utility.cs" />
+    <Compile Include="Helpers\XmlServiceHandlerBase.cs" />
+    <Compile Include="MNPBSS\Definition\FaultResponse.cs" />
+    <Compile Include="MNPBSS\Definition\OrderTicketQueryResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ConfirmPortOutOrderResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ConfirmPortOutOrderRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CancelPortInRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CancelPortoutRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CancelPortInResponse.cs" />
+    <Compile Include="MNPBSS\Definition\CancelPortOutResponse.cs" />
+    <Compile Include="MNPBSS\Definition\OrderTicketQueryRequest.cs" />
+    <Compile Include="MNPBSS\Definition\ConnectServiceRequest.cs" />
+    <Compile Include="MNPBSS\Definition\ConnectServiceResponse.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerByPortingIdRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerByPortingIdResponse.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerByPortingReferenceIdRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerByPortingReferenceIdResponse.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerRequest.cs" />
+    <Compile Include="MNPBSS\Definition\CustomerResponse.cs" />
+    <Compile Include="MNPBSS\Definition\DateType.cs" />
+    <Compile Include="MNPBSS\Definition\DisconnectServiceInternal.cs" />
+    <Compile Include="MNPBSS\Definition\DisconnectServiceInternalResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ExtendedResponse.cs" />
+    <Compile Include="MNPBSS\Definition\IndividualPorting.cs" />
+    <Compile Include="MNPBSS\Definition\NPOQResult.cs" />
+    <Compile Include="MNPBSS\Definition\NPOResult.cs" />
+    <Compile Include="MNPBSS\Definition\OrganizationPorting.cs" />
+    <Compile Include="MNPBSS\Definition\PortingReferenceID.cs" />
+    <Compile Include="MNPBSS\Definition\PortingRequestID.cs" />
+    <Compile Include="MNPBSS\Definition\PortInNotificationRequest.cs" />
+    <Compile Include="MNPBSS\Definition\PortInNotificationResponse.cs" />
+    <Compile Include="MNPBSS\Definition\PortOutDetailsSN.cs" />
+    <Compile Include="MNPBSS\Definition\PortOutNotificationRequest.cs" />
+    <Compile Include="MNPBSS\Definition\PortOutNotificationResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ProductServiceID.cs" />
+    <Compile Include="MNPBSS\Definition\Request.cs" />
+    <Compile Include="MNPBSS\Definition\Response.cs" />
+    <Compile Include="MNPBSS\Definition\SDPHeader.cs" />
+    <Compile Include="MNPBSS\Definition\ServiceIdResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ValidatePortOutInternalRequest.cs" />
+    <Compile Include="MNPBSS\Definition\ValidatePortOutInternalResponse.cs" />
+    <Compile Include="MNPBSS\Definition\ValidatePortOutRequest.cs" />
+    <Compile Include="MNPBSS\Definition\ValidatePortOutResponse.cs" />
+    <Compile Include="MNPBSS\IMNPBSS.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MNPBSS\MNPBSS.svc.cs">
+      <DependentUpon>MNPBSS.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SMSC\Definition\SessionManager.cs" />
+    <Compile Include="SMSC\Definition\SMSC_SendSMS_v2.cs" />
+    <Compile Include="SMSC\Helpers\SmscHelper.cs" />
+    <Compile Include="SMSC\Helpers\SsoClientSendFilter.cs" />
+    <Compile Include="SMSC\Helpers\ssoTokenAssertion.cs" />
+    <Compile Include="SMSC\IntwkSMSC.cs" />
+    <Compile Include="SMSC\ntwkSMSC.svc.cs">
+      <DependentUpon>ntwkSMSC.svc</DependentUpon>
+    </Compile>
+    <Compile Include="SMSC\Processes\ActionHandler\SendSMSActionHandler.cs" />
+    <Compile Include="SMSC\Processes\SMSCActionHandlerBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="MNPBSS\Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.localhost.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.qa.selcomm.com.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.ua.selcomm.com.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.selcomm.com.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.webua1si.si.iotbilling.com.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <Content Include="wse3ClientPolicyCache.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57092</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:58443/Development/SelcommOSSSingtel</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Import Project="../write-build-info.exclude/write-build-info.targets" />
+</Project>

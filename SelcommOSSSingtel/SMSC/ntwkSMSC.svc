@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SelcommWebServices.SelcommOSS.Singtel.SMSC.ntwkSMSC" CodeBehind="ntwkSMSC.svc.cs" %>
